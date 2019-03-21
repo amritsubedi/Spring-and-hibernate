@@ -1,0 +1,5 @@
+package amrit.springdemo;
+
+public interface Coach {
+
+}

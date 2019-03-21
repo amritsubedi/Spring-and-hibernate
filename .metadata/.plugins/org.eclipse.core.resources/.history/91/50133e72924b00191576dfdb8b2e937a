@@ -1,0 +1,9 @@
+package amrit.springdemo;
+
+public class BaseballCoach {
+	
+	public String getDailyWorkout() {
+		return "30 minutes batting practice.";
+	}
+
+}
