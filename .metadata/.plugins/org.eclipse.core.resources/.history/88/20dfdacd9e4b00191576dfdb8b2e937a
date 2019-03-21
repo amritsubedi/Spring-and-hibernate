@@ -1,0 +1,21 @@
+package amrit.springdemo;
+
+public class CricketCoach implements Coach {
+	
+	private FortuneService fortuneService;
+	
+	public CricketCoach(FortuneService theFortuneService) {
+		this.fortuneService = theFortuneService;
+	}
+
+	@Override
+	public String getDailyWorkout() {
+		return "Practice fast bowling.";
+	}
+
+	@Override
+	public String getDailyFortune() {
+		return "Cricket Coach: " + fortuneService.getFortune();
+	}
+
+}

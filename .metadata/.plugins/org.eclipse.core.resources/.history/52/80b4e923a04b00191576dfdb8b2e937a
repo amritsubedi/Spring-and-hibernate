@@ -1,0 +1,23 @@
+package amrit.springdemo;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class SetterDemoApp {
+
+	public static void main(String[] args) {
+		
+		// load the configuration file
+		ClassPathXmlApplicationContext context = 
+				new ClassPathXmlApplicationContext();
+		
+		// retrieve bean from spring container
+		CricketCoach myCricketCoach = context.getBean("myCricketCoach", CricketCoach.class);
+		
+		// invoke methods
+		
+		// close context
+		context.close();
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package amrit.springdemo;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class SetterDemoApp {
+
+	public static void main(String[] args) {
+		
+		// load the configuration file
+		ClassPathXmlApplicationFile context = 
+				new ClassPathXmlApplicationContext();
+		
+		// retrieve bean from spring container
+		
+		
+		// invoke methods
+		
+		// close context
+		context.close();
+
+	}
+
+}
