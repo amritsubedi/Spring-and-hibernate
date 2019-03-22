@@ -1,0 +1,7 @@
+package amrit.springdemo;
+
+public interface RandomFortuneService {
+	
+	public String getRandomFortune();
+
+}

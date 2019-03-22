@@ -1,0 +1,27 @@
+package amrit.springdemo;
+
+import java.util.Random;
+
+public class RandomFortuneService implements FortuneService {
+	
+	// Store 3 fortunes
+	
+	private String[] fortuneArray = {
+			"Fortune One",
+			"Fortune Two",
+			"Fortune Three"
+	};
+	
+	// generate random number
+	
+	private Random myRandom = new Random();
+	
+	// return random fortune
+	
+	@Override
+	public String getFortune() {
+		int index = myRandom.nextInt(fortuneArray.length);
+		return fortuneArray[index];
+	}
+
+}

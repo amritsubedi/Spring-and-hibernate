@@ -1,0 +1,10 @@
+package amrit.springdemo;
+
+public class RandomFortuneService implements FortuneService {
+
+	@Override
+	public String getFortune() {
+		return null;
+	}
+
+}
